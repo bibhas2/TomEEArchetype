@@ -17,11 +17,12 @@ mvn install
 ##Generate a New Web Project
 
 ```
-mvn archetype:generate -DarchetypeArtifactId=tomee-archetype \
+mvn -B archetype:generate -DarchetypeArtifactId=tomee-archetype \
   -DarchetypeGroupId=com.mobiarch \
   -DarchetypeVersion=1.0 \
   -DgroupId=com.mycompany.app \
   -DartifactId=MyWeb
+  -Dversion=1.0
 ```
 
 The generated project is ready to run. Let's say that the artifact ID (or project name) is MyWeb. 
