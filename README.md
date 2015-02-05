@@ -1,5 +1,12 @@
 This is an archetype to quickly create a JavaEE web project for TomEE.
 
+##Features
+- The generated project has a single dependency for the whole Java EE 6 web profile API. This covers, web, EJB, JAX-RS etc.
+- Certain XML files are added to WEB-INF for JAX-RS to work correctly in Tomee.
+
+The generated WAR file is fairly standard compliant and you should be 
+deploy it to any Java EE 6 web container.
+
 ##Install the Archetype
 ```
 git clone https://github.com/bibhas2/TomEEArchetype.git
@@ -7,7 +14,7 @@ cd TomEEArchetype
 mvn install
 ```
 
-##Generate a New Pink Based Web Project
+##Generate a New Web Project
 
 ```
 mvn archetype:generate -DarchetypeArtifactId=tomee-archetype \
